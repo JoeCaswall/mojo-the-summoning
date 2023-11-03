@@ -4,7 +4,7 @@
   "description": "",
   "main": "run.js",
   "scripts": {
-    "test": "jest --runInBand --watchAll",
+    "test": "jest --watch --runInBand",
     "seed": "node src/db/seed.js",
     "dev": "nodemon src/run.js",
     "start": "node src/run.js"
@@ -15,9 +15,11 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "sequelize": "^6.33.0"
+    "sequelize": "^6.33.0",
+    "sqlite3": "5.1.6"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
     "supertest": "^6.3.3"

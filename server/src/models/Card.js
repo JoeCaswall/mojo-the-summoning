@@ -15,4 +15,4 @@ Card.init(
   }
 );
 
-module.exports = Card;
+module.exports = { Card };

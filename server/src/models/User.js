@@ -5,7 +5,7 @@ class User extends Model {}
 
 User.init(
   {
-    uername: DataTypes.STRING,
+    username: DataTypes.STRING,
   },
   {
     sequelize: db,
@@ -13,4 +13,4 @@ User.init(
   }
 );
 
-module.exports = User;
+module.exports = { User };
