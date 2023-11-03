@@ -15,8 +15,9 @@ async function seed() {
   ]);
 
   const deckNames = ["snake pit", "the matrix", "Doom Burger"];
+  const deckXp = [0, 400, 1000];
   const decks = await Promise.all(
-    users.map((u, i) => u.createDeck({ name: deckNames[i] }))
+    users.map((u, i) => u.createDeck({ name: deckNames[i], xp: deckXp[i] }))
   );
 
   const cards = [
